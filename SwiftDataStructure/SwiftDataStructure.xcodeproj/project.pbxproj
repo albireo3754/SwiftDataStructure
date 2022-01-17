@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DD9A3B852788195E0049667E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A3B842788195E0049667E /* main.swift */; };
+		DDFE6A8327950CB2005D4047 /* QuickSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE6A8227950CB2005D4047 /* QuickSortTest.swift */; };
+		DDFE6A8B27950CF9005D4047 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE6A8A27950CF9005D4047 /* QuickSort.swift */; };
+		DDFE6A8C27950E77005D4047 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE6A8A27950CF9005D4047 /* QuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,20 @@
 /* Begin PBXFileReference section */
 		DD9A3B812788195E0049667E /* SwiftDataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9A3B842788195E0049667E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DDFE6A8027950CB2005D4047 /* QuickSortTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSortTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFE6A8227950CB2005D4047 /* QuickSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTest.swift; sourceTree = "<group>"; };
+		DDFE6A8A27950CF9005D4047 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DD9A3B7E2788195E0049667E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFE6A7D27950CB2005D4047 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9A3B832788195E0049667E /* SwiftDataStructure */,
+				DDFE6A8127950CB2005D4047 /* QuickSortTest */,
 				DD9A3B822788195E0049667E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9A3B812788195E0049667E /* SwiftDataStructure */,
+				DDFE6A8027950CB2005D4047 /* QuickSortTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +72,26 @@
 		DD9A3B832788195E0049667E /* SwiftDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				DDFE6A8927950CED005D4047 /* SwiftAlgorithm */,
 				DD9A3B842788195E0049667E /* main.swift */,
 			);
 			path = SwiftDataStructure;
+			sourceTree = "<group>";
+		};
+		DDFE6A8127950CB2005D4047 /* QuickSortTest */ = {
+			isa = PBXGroup;
+			children = (
+				DDFE6A8227950CB2005D4047 /* QuickSortTest.swift */,
+			);
+			path = QuickSortTest;
+			sourceTree = "<group>";
+		};
+		DDFE6A8927950CED005D4047 /* SwiftAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				DDFE6A8A27950CF9005D4047 /* QuickSort.swift */,
+			);
+			path = SwiftAlgorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +114,23 @@
 			productReference = DD9A3B812788195E0049667E /* SwiftDataStructure */;
 			productType = "com.apple.product-type.tool";
 		};
+		DDFE6A7F27950CB2005D4047 /* QuickSortTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFE6A8627950CB2005D4047 /* Build configuration list for PBXNativeTarget "QuickSortTest" */;
+			buildPhases = (
+				DDFE6A7C27950CB2005D4047 /* Sources */,
+				DDFE6A7D27950CB2005D4047 /* Frameworks */,
+				DDFE6A7E27950CB2005D4047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSortTest;
+			productName = QuickSortTest;
+			productReference = DDFE6A8027950CB2005D4047 /* QuickSortTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +142,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					DD9A3B802788195E0049667E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					DDFE6A7F27950CB2005D4047 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -111,9 +163,20 @@
 			projectRoot = "";
 			targets = (
 				DD9A3B802788195E0049667E /* SwiftDataStructure */,
+				DDFE6A7F27950CB2005D4047 /* QuickSortTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDFE6A7E27950CB2005D4047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD9A3B7D2788195E0049667E /* Sources */ = {
@@ -121,6 +184,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9A3B852788195E0049667E /* main.swift in Sources */,
+				DDFE6A8B27950CF9005D4047 /* QuickSort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFE6A7C27950CB2005D4047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFE6A8327950CB2005D4047 /* QuickSortTest.swift in Sources */,
+				DDFE6A8C27950E77005D4047 /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +337,48 @@
 			};
 			name = Release;
 		};
+		DDFE6A8427950CB2005D4047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6785P7H4GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Albireo3754.QuickSortTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DDFE6A8527950CB2005D4047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6785P7H4GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Albireo3754.QuickSortTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +396,15 @@
 			buildConfigurations = (
 				DD9A3B892788195E0049667E /* Debug */,
 				DD9A3B8A2788195E0049667E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFE6A8627950CB2005D4047 /* Build configuration list for PBXNativeTarget "QuickSortTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFE6A8427950CB2005D4047 /* Debug */,
+				DDFE6A8527950CB2005D4047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
